@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <OutputType>WinExe</OutputType>
+        <Configurations>Debug;Release;VisualTests</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="ppy.osu.Framework" Version="2019.125.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources" />
+      <Folder Include="Tests" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <EmbeddedResource Include="Textures\**" />
+      <EmbeddedResource Include="Fonts\**" />
+    </ItemGroup>
+
+</Project>
